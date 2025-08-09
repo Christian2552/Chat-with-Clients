@@ -1,0 +1,187 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('/black-curves.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Match send button style */
+.Log-Out {
+  background-color: #df731d;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect */
+.Log-Out:hover {
+  background-color: #d06f17;
+}
+
+/* Container to push it to far right */
+.logout-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px; /* some spacing from edges */
+}
+
+
+/* Wrapper with left sidebar */
+.support-wrapper {
+  display: flex;
+  height: 90vh;
+  width: 90vw;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Clients Sidebar */
+.clients-list {
+  width: 250px;
+  background-color: #1a1a1a;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  color: white;
+  overflow-y: auto;
+}
+
+.clients-list h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #df731d;
+  margin-bottom: 15px;
+}
+
+.clients-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clients-list li {
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: #222;
+  transition: background-color 0.2s ease;
+}
+
+.clients-list li:hover {
+  background-color: #333;
+}
+
+.clients-list li.active {
+  background-color: #df731d;
+  color: white;
+  font-weight: bold;
+}
+
+/* Chat area */
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.chat-header {
+  background-color: #df731d;
+  padding: 20px 30px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Chat messages */
+.chat-box {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.chat-message {
+  max-width: 80%;
+  padding: 16px;
+  border-radius: 18px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  word-break: break-word;
+}
+
+.chat-message p {
+  margin: 0;
+}
+
+.timestamp {
+  font-size: small;
+  color: rgb(201, 201, 201);
+}
+
+.chat-message.sent {
+  align-self: flex-end;
+  background-color: #dd7919;
+  border-radius: 18px 18px 4px 18px;
+}
+
+.chat-message.received {
+  align-self: flex-start;
+  background-color: #333;
+  border-radius: 18px 18px 18px 4px;
+}
+
+/* Chat input */
+.chat-input {
+  display: flex;
+  padding: 20px 30px;
+  background-color: #111;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 15px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 15px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.chat-input button {
+  background-color: #df731d;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.chat-input button:hover {
+  background-color: #d06f17;
+}
+
+
+
